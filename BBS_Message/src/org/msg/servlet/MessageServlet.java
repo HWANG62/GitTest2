@@ -14,7 +14,7 @@ import org.msg.dao.MessageDao;
 import org.msg.entity.Message;
 import org.msg.entity.UserInfo;
 
-public class MessageServlet extends HttpServlet{
+public class MessageServlet extends HttpServlet{//qweqeqeq
 
 	/**
 	 * 
