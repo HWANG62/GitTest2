@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.msg.dao.UserInfoDao;
 import org.msg.entity.UserInfo;
 
-public class UserInfoServlet extends HttpServlet{
+public class UserInfoServlet extends HttpServlet{//wanghao
 	
 	/**
 	 * 
@@ -83,11 +83,11 @@ public class UserInfoServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 			
-		String action=request.getParameter("action");//µÃµ½ reg
+		String action=request.getParameter("action");//å¾—åˆ° reg
 		try {
-			Method method=this.getClass().getDeclaredMethod(action, new Class[]{HttpServletRequest.class,HttpServletResponse.class});//µ÷ÓÃregÕâ¸ö·½·¨
-			String page=(String)method.invoke(this, new Object[]{request,response});//regÕâ¸ö·½·¨×îºó·µ»ØµÄÊ²Ã´
-			request.getRequestDispatcher(page).forward(request, response);//×ª·¢µ½ÄÄ¸öjsp page
+			Method method=this.getClass().getDeclaredMethod(action, new Class[]{HttpServletRequest.class,HttpServletResponse.class});//è°ƒç”¨regè¿™ä¸ªæ–¹æ³•
+			String page=(String)method.invoke(this, new Object[]{request,response});//regè¿™ä¸ªæ–¹æ³•æœ€åè¿”å›çš„ä»€ä¹ˆ
+			request.getRequestDispatcher(page).forward(request, response);//è½¬å‘åˆ°å“ªä¸ªjsp page
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
