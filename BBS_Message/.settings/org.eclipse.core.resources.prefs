@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/org/msg/dao/UserInfoDao.java=UTF-8
+encoding//src/org/msg/filter/EncodingFilter.java=UTF-8
+encoding//src/org/msg/servlet/MessageServlet.java=gb2312
+encoding/<project>=gb2312

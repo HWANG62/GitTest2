@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BBS_Message"
+  id="myeclipse.1430359075875"
+  context-root="/BBS_Message"
+  j2ee-spec="6.0"
+  archive="BBS_Message.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
