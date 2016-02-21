@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.List;
 
 public class BaseDao {
-	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";//qudong
 	private final String URL="jdbc:sqlserver://localhost:1433;databaseName=NewsManagerSystem";
 	private final String USERNAME="sa";
 	private final String PASSWORD="sa";
@@ -48,7 +48,7 @@ public class BaseDao {
 	}
 
 	/**
-	 * Ö´ĞĞ¸üĞÂ²Ù×÷µÄ·½·¨
+	 * æ‰§è¡Œæ›´æ–°æ“ä½œçš„æ–¹æ³•
 	 * @
 	 * 
 	 */
@@ -58,10 +58,10 @@ public class BaseDao {
 			pstm=con.prepareStatement(sql);
 			if(list!=null){
 				for (int i = 0; i < list.size(); i++) {
-					pstm.setObject(i+1, list.get(i));//ÒÀ´Î¸øsqlÓï¾äµÄ²ÎÊı¸³Öµ
+					pstm.setObject(i+1, list.get(i));//ä¾æ¬¡ç»™sqlè¯­å¥çš„å‚æ•°èµ‹å€¼
 				}
 			}
-			return pstm.executeUpdate();//Ö´ĞĞsqlÓï¾ä£¬·µ»Øint
+			return pstm.executeUpdate();//æ‰§è¡Œsqlè¯­å¥ï¼Œè¿”å›int
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
