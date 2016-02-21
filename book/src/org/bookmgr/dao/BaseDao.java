@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.List;
 
 public class BaseDao {
-	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";//qudong
+	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";//drive
 	private final String URL="jdbc:sqlserver://localhost:1433;databaseName=NewsManagerSystem";
 	private final String USERNAME="sa";
 	private final String PASSWORD="sa";
@@ -48,7 +48,7 @@ public class BaseDao {
 	}
 
 	/**
-	 * 执行更新操作的方法
+	 * �ц��存�版��浣����规�
 	 * @
 	 * 
 	 */
@@ -58,10 +58,10 @@ public class BaseDao {
 			pstm=con.prepareStatement(sql);
 			if(list!=null){
 				for (int i = 0; i < list.size(); i++) {
-					pstm.setObject(i+1, list.get(i));//依次给sql语句的参数赋值
+					pstm.setObject(i+1, list.get(i));//渚�娆＄�sql璇��ョ�����拌���
 				}
 			}
-			return pstm.executeUpdate();//执行sql语句，返回int
+			return pstm.executeUpdate();//�ц�sql璇��ワ�杩���int
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
