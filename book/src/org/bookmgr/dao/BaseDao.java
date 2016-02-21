@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.util.List;
 
 public class BaseDao {
-	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";//drive
+	private final String DRIVERCLASS="com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private final String URL="jdbc:sqlserver://localhost:1433;databaseName=NewsManagerSystem";
-	private final String USERNAME="sa";
+	private final String USERNAME="sa";//username
 	private final String PASSWORD="sa";
 	protected Connection con=null;
 	protected PreparedStatement pstm=null;
